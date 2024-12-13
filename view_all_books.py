@@ -1,6 +1,19 @@
+import json
+from tabulate import tabulate
+
 def view_all_books(all_books):
-    if all_books != []:
+    with open("all_books.json", "r") as fp:
+        all_books = json.load(fp)
+
+    if all_books:
+        headers = ["Title", "Author", "ISBN", "Year", "Price", "Quantity", "Book Added Date", "Book Last Updated Date"]
+        table = []
         for book in all_books:
-            print(f"Title: {book['title']} | Author: {book['author']} | ISBN: {book['isbn']} | Year: {book['year']} | Price: {book['price']} | Quantity: {book['quantity']}")
+            table.append([
+                book['title'], book['author'], book['isbn'], book['year'], book['price'],
+                book['quantity'], book['bookAddedDate'], book['bookLastUpdatedDate']
+            ])
+
+        print(tabulate(table, headers, tablefmt="fancy_grid"))
     else:
-        print("No Book found in program")
+        print("No books found in the program")

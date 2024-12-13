@@ -1,10 +1,8 @@
 Task_Completed:(as_file)
-1.book.py(it is the main.py)
-2.add_books.py
-3.view_all.books.py
-4.book_update.py
-5.remove.py
-6.return_book.py
-7.lent_book.py
-8.save_all_books.py
-9.all_books.csv
+1.Borrowers name,Borrowers Phone,Book Title,Return Due Date (DateTime)
+2.When someone lends a book, the quantity of the book will decrease.
+3.When the borrower returns the book . will remove their info from the lend bookb as_file
+4.When borrower returns the book, thequantity of the book will increase.
+5.If there are no boks available to lend a message will show "Not enough books are available to lend."
+
+### I have use tabulate module for showing data like table form

@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Programming Language",
+        "author": "David",
+        "isbn": 8311581094,
+        "year": 2024,
+        "price": 480,
+        "quantity": 3,
+        "bookAddedDate": "2024-12-13 11:23:47",
+        "bookLastUpdatedDate": "2024-12-13 11:45:50"
+    },
+    {
+        "title": "Java",
+        "author": "Smith",
+        "isbn": 3673199111,
+        "year": 2000,
+        "price": 215,
+        "quantity": 7,
+        "bookAddedDate": "2024-12-13 14:11:15",
+        "bookLastUpdatedDate": "2024-12-13 14:11:27"
+    },
+    {
+        "title": "Aguner Poroshmoni",
+        "author": "Humayan Ahmed",
+        "isbn": 9373790299,
+        "year": 1999,
+        "price": 210,
+        "quantity": 11,
+        "bookAddedDate": "2024-12-13 15:34:02",
+        "bookLastUpdatedDate": "2024-12-13 15:35:24",
+        "borrowers": [
+            {
+                "name": "Hamim",
+                "phone": "0176322452",
+                "quantity": 4,
+                "return_due_date": "2024-12-27 16:20:56",
+                "book_title": "Aguner Poroshmoni"
+            }
+        ]
+    },
+    {
+        "title": "Dragon Ball Z",
+        "author": "Will Carry",
+        "isbn": 9901774349,
+        "year": 1998,
+        "price": 330,
+        "quantity": 10,
+        "bookAddedDate": "2024-12-13 16:21:57",
+        "bookLastUpdatedDate": ""
+    }
+]

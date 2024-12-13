@@ -1,4 +1,6 @@
+
 from save_all_books import save_all_books
+from datetime import datetime
 
 def book_update(all_books):
     search_term = input("Enter search term (title, author, or ISBN): ").strip().lower()
@@ -40,6 +42,7 @@ def book_update(all_books):
     book['year'] = int(input(f"Enter new publishing year (current: {book['year']}): ") or book['year'])
     book['price'] = int(input(f"Enter new price (current: {book['price']}): ") or book['price'])
     book['quantity'] = int(input(f"Enter new quantity (current: {book['quantity']}): ") or book['quantity'])
+    book['bookLastUpdatedDate'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     save_all_books(all_books)
     print("Book details updated successfully.")
